@@ -62,4 +62,14 @@ public class DrumTest {
         assertTrue(drum.isSnared());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Snare Drum's make Rat-a-tat-ta sounds", drum.play());
+    }
+
+    @Test
+    public void canSell(){
+        assertEquals(5.00, drum.calculateMarkup(), 0.02);
+    }
+
 }

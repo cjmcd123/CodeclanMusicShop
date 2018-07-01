@@ -67,5 +67,13 @@ public class SaxophoneTest {
         assertEquals(23, saxophone.getToneHoles());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Saxophone's make Berrrt sounds", saxophone.play());
+    }
 
+    @Test
+    public void canSell(){
+        assertEquals(30.00, saxophone.calculateMarkup(), 0.02);
+    }
 }

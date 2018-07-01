@@ -67,4 +67,14 @@ public class PianoTest {
     public void hasPedals(){
         assertEquals(3, piano.getPedals());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("Piano's make Plink plonk sounds", piano.play());
+    }
+
+    @Test
+    public void canSell(){
+        assertEquals(50.00, piano.calculateMarkup(), 0.02);
+    }
 }

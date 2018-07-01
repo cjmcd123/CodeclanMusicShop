@@ -62,4 +62,14 @@ public class FluteTest {
         assertEquals(16, flute.getKeys());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Flute's make Toot toot sounds", flute.play());
+    }
+
+    @Test
+    public void canSell(){
+        assertEquals(20.00, flute.calculateMarkup(), 0.02);
+    }
+
 }

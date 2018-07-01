@@ -58,5 +58,13 @@ public class FiddleTest {
         assertEquals(4, fiddle.getStrings());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Fiddle's make Fiddle dee sounds", fiddle.play());
+    }
 
+    @Test
+    public void canSell(){
+        assertEquals(10.00, fiddle.calculateMarkup(), 0.02);
+    }
 }

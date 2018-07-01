@@ -62,4 +62,13 @@ public class TrumpetTest {
         assertEquals(4, trumpet.getValves());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Trumpet's make Toom sounds", trumpet.play());
+    }
+
+    @Test
+    public void canSell(){
+        assertEquals(20.00, trumpet.calculateMarkup(), 0.02);
+    }
 }

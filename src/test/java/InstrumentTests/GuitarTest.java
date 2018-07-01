@@ -63,5 +63,13 @@ public class GuitarTest {
         assertEquals(4, guitar.getStrings());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Guitar's make Twang sounds", guitar.play());
+    }
 
+    @Test
+    public void canSell(){
+        assertEquals(10.00, guitar.calculateMarkup(), 0.02);
+    }
 }

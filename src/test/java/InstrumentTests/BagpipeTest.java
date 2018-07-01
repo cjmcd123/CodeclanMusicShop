@@ -72,4 +72,14 @@ public class BagpipeTest {
         assertEquals(3, bagpipe.getDrones());
     }
 
+    @Test
+    public void canPlay(){
+        assertEquals("Bagpipe's make Skirl sounds", bagpipe.play());
+    }
+
+    @Test
+    public void canSell(){
+        assertEquals(10.00, bagpipe.calculateMarkup(), 0.02);
+    }
+
 }
